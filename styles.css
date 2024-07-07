@@ -1,0 +1,259 @@
+/* General styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #3DDC84;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2BB673;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    margin: 20px;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #3DDC84;
+}
+
+p {
+    color: #555;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.dropbtn {
+    background-color: #3DDC84;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content p, .dropdown-content ul {
+    margin: 16px;
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content ul {
+    padding-left: 20px;
+}
+
+.dropdown-content ul li {
+    list-style-type: disc;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Form styles */
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-top: 10px;
+    color: #333;
+}
+
+input, textarea, button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding does not add to width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3DDC84;
+    box-shadow: 0 0 8px rgba(61, 220, 132, 0.4);
+}
+
+button {
+    background-color: #3DDC84;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2BB673;
+}
+
+/* Footer styles */
+footer {
+    background-color: #3DDC84;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Floating Sidebar */
+.floating-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    z-index: 1000;
+}
+
+.floating-sidebar a {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.floating-sidebar a:hover {
+    background-color: #575757;
+}
+
+/* Social Media Colors */
+.floating-sidebar .facebook {
+    background-color: #3b5998;
+}
+
+.floating-sidebar .twitter {
+    background-color: #1da1f2;
+}
+
+.floating-sidebar .linkedin {
+    background-color: #0077b5;
+}
+
+.floating-sidebar .instagram {
+    background-color: #e1306c;
+}
+
+/* 3D Container */
+#3d-container {
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in {
+    animation: slideIn 1s;
+}
